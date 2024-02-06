@@ -6,7 +6,7 @@ import java.net.URL;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        // Trade-off: Made League Class to get matches.txt file instead of it to be a responsibility of Main.
+        // Trade-off: Made League Class to call matches.txt file for input data instead of it to be called here on Main.
         URL resourceUrl = Main.class.getResource("/matches.txt");
         String filePath = new File(resourceUrl.getFile()).getAbsolutePath();
 
